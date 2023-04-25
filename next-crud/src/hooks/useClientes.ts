@@ -25,14 +25,14 @@ export default function useClientes() {
   function obterTodos() {
     repo.obterTodos().then(clientes => {
       setClientes(clientes)
-      exibirTabela
+      exibirTabela()
     })
   }
 
   function selecionarCliente(cliente: Cliente) {
     console.log(cliente.nome)
     setCliente(cliente)
-    exibirFormulario
+    exibirFormulario()
   }
 
   async function excluirCliente(cliente: Cliente) {
@@ -48,7 +48,8 @@ export default function useClientes() {
 
   function novoCliente() {
     setCliente(Cliente.vazio())
-    exibirFormulario
+    console.log(exibirFormulario)
+    exibirFormulario()
   }
 
   return {
