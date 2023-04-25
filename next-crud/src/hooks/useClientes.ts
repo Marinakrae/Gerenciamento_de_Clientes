@@ -48,7 +48,6 @@ export default function useClientes() {
 
   function novoCliente() {
     setCliente(Cliente.vazio())
-    console.log(exibirFormulario)
     exibirFormulario()
   }
 

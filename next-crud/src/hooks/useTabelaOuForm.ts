@@ -6,8 +6,6 @@ export default function useTabelaOuForm() {
     const exibirTabela = () => setVisivel('tabela')
     const exibirFormulario = () => setVisivel('form')
 
-    console.log(exibirFormulario)
-
     return {
         formularioVisivel: visivel === 'form',
         tabelaVisivel: visivel === 'tabela',
